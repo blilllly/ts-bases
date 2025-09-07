@@ -4,10 +4,11 @@
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
+    "outFile": "./main.js",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
+    "module": "amd",
     "target": "esnext",
     // "types": [],
     // For nodejs:
@@ -16,7 +17,7 @@
     // and npm install -D @types/node
 
     // Other Outputs
-    // "sourceMap": true,
+    "sourceMap": true,
     // "declaration": true,
     // "declarationMap": true,
 
@@ -25,6 +26,7 @@
     "exactOptionalPropertyTypes": true,
 
     // Style Options
+    "removeComments": true,
     // "noImplicitReturns": true,
     // "noImplicitOverride": true,
     // "noUnusedLocals": true,
@@ -35,10 +37,14 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
+    // "verbatimModuleSyntax": true,
+    // "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "auto",
     "skipLibCheck": true,
-  }
+  },
+
+  "exclude": [
+    "node_modules2"
+  ]
 }
